@@ -1,5 +1,7 @@
 # Colloquium-2-AaDS
 
+### [Google sheet](https://docs.google.com/spreadsheets/d/1mTQ4a53XEYyvOfGLie_Yakce_X6GPSK59QPTKr-xfmQ/edit?usp=sharing)
+
 ## Topics:
 ### 1. Оценка сложности алгоритма по времени 
 ### 2. Оценка сложности алгоритма по памяти

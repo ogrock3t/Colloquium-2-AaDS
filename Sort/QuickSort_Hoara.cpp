@@ -1,4 +1,4 @@
-int Partition(int* a, int l, int r) { //Hoara
+int Partition(int* a, int l, int r) {
     int pivot = a[(l + r) / 2];
     int i = l;
     int j = r;
@@ -19,19 +19,6 @@ int Partition(int* a, int l, int r) { //Hoara
         j--;
     }
     return j;
-}
-
-int Partition(int* a, int l, int r) { //Lomuto
-    long long pivot = a[r];
-    int i = l - 1;
-    for (int j = l; j < r; ++j) {
-        if (a[j] <= pivot) {
-            i++;
-            std::swap(a[i], a[j]);
-        }
-    }
-    std::swap(a[i + 1], a[r]);
-    return i + 1;
 }
 
 void QuickSort(int* a, int l, int r) {

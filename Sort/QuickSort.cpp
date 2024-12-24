@@ -22,7 +22,7 @@ int Partition(int* a, int l, int r) { //Hoara
 }
 
 int Partition(int* a, int l, int r) { //Lomuto
-    long long pivot = a[r];
+    int pivot = a[r];
     int i = l - 1;
     for (int j = l; j < r; ++j) {
         if (a[j] <= pivot) {
@@ -37,7 +37,7 @@ int Partition(int* a, int l, int r) { //Lomuto
 void QuickSort(int* a, int l, int r) {
     if (l < r) {
         int q = Partition(a, l, r);
-        QuickSort(a, l, q);
+        QuickSort(a, l, q); // q - 1 if u use Lomuto
         QuickSort(a, q + 1, r);
     }
 }

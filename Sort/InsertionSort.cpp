@@ -3,7 +3,7 @@ void InsertionSort(int* arr, int N) {
         int key = arr[j];
         size_t i = j - 1;
 
-        while (i > 0 && arr[i] > key) {
+        while (i >= 0 && arr[i] > key) {
             arr[i + 1] = arr[i];
             i--;
         }
